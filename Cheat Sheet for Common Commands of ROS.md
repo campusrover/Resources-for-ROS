@@ -5,9 +5,11 @@
 catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
 E.g. catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 ```
-2. Put the python in <pkg>/src or gedit filename.py
+2. Put the python in <pkg>/src or `gedit <fileName.py>`
 3. Make it(python code) excecutable(cd to <pkg>/src)
-`chmod +x <fileName>.py`
+```
+chmod +x <fileName>.py
+```
 4. (cd to catkin_ws/)
 ```
 catkin_make
@@ -19,7 +21,7 @@ rosrun <package_name> <excecutable>
 ```
 
 ## UI Instructions:
-- Simple use case, server, gui and a robot
+- Simple use case, server, GUIand a robot
 ```
 $ roslaunch stdr_launchers server_with_map_and_gui_plus_robot.launch
 ```

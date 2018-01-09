@@ -9,7 +9,9 @@ E.g. catkin_create_pkg beginner_tutorials std_msgs rospy roscpp
 3. Make it(python code) excecutable(cd to <pkg>/src)
 `chmod +x <fileName>.py`
 4. (cd to catkin_ws/)
-`catkin_make`
+```
+catkin_make
+```
 5. (excecute code)
 ```
 roscore
@@ -18,7 +20,9 @@ rosrun <package_name> <excecutable>
 
 ## UI Instructions:
 - Simple use case, server, gui and a robot
-`$ roslaunch stdr_launchers server_with_map_and_gui_plus_robot.launch`
+```
+$ roslaunch stdr_launchers server_with_map_and_gui_plus_robot.launch
+```
 - No map, no robot
 ```
 $ roslaunch stdr_launchers server_no_map.launch
@@ -26,7 +30,9 @@ $ roslaunch stdr_gui stdr_gui.launch
 ```
  
 ## Using Rviz to visualize robot, sensor measurements
-`$ roslaunch stdr_launchers rviz.launch`
+```
+$ roslaunch stdr_launchers rviz.launch
+```
  
 ## MAP
 - Loading a map, using load_map tool
@@ -42,4 +48,6 @@ $ roslaunch stdr_launchers server_with_map.launch
  
 ## Robot Manipulation
 [http://wiki.ros.org/stdr_simulator/Tutorials/Robot%20manipulation](http://wiki.ros.org/stdr_simulator/Tutorials/Robot%20manipulation)
-`$ roslaunch turblebot_teleop_key.launch`
+```
+$ roslaunch turblebot_teleop_key.launch
+```

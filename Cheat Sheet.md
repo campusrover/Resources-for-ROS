@@ -1,5 +1,5 @@
-#Cheat Sheet for Common Commands of ROS
-##Hints on how to get the STDR running:
+# Cheat Sheet for Common Commands of ROS
+## Hints on how to get the STDR running:
 1. Create a package (cd to catkin_ws/src)
 ```
 catkin_create_pkg <package_name> [depend1] [depend2] [depend3]
@@ -16,7 +16,7 @@ roscore
 rosrun <package_name> <excecutable>
 ```
 
-##UI Instructions:
+## UI Instructions:
 - Simple use case, server, gui and a robot
 `$ roslaunch stdr_launchers server_with_map_and_gui_plus_robot.launch`
 - No map, no robot
@@ -25,10 +25,10 @@ $ roslaunch stdr_launchers server_no_map.launch
 $ roslaunch stdr_gui stdr_gui.launch
 ```
  
-##Using Rviz to visualize robot, sensor measurements
+## Using Rviz to visualize robot, sensor measurements
 `$ roslaunch stdr_launchers rviz.launch`
  
-##MAP
+## MAP
 - Loading a map, using load_map tool
 ```
 $ roscd stdr_resources
@@ -40,6 +40,6 @@ $ rosrun stdr_server load_map maps/sparse_obstacles.yaml
 $ roslaunch stdr_launchers server_with_map.launch
 ```
  
-##Robot Manipulation
+## Robot Manipulation
 [http://wiki.ros.org/stdr_simulator/Tutorials/Robot%20manipulation](http://wiki.ros.org/stdr_simulator/Tutorials/Robot%20manipulation)
 `$ roslaunch turblebot_teleop_key.launch`
